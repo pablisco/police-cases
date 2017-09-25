@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400">
+  <g fill="none" fill-rule="evenodd" opacity=".5">
+    <rect width="400" height="400" fill="#FFF"/>
+    <rect width="50" height="50" fill="#BDE318"/>
+    <rect width="50" height="50" x="50" fill="#070676"/>
+    <rect width="50" height="50" x="50" y="50" fill="#BDE318"/>
+    <rect width="50" height="50" y="50" fill="#070676"/>
+    <g transform="translate(100)">
+      <rect width="50" height="50" fill="#BDE318"/>
+      <rect width="50" height="50" x="50" fill="#070676"/>
+      <rect width="50" height="50" x="50" y="50" fill="#BDE318"/>
+      <rect width="50" height="50" y="50" fill="#070676"/>
+    </g>
+    <g transform="translate(0 100)">
+      <rect width="50" height="50" fill="#BDE318"/>
+      <rect width="50" height="50" x="50" fill="#070676"/>
+      <rect width="50" height="50" x="50" y="50" fill="#BDE318"/>
+      <rect width="50" height="50" y="50" fill="#070676"/>
+    </g>
+    <g transform="translate(100 100)">
+      <rect width="50" height="50" fill="#BDE318"/>
+      <rect width="50" height="50" x="50" fill="#070676"/>
+      <rect width="50" height="50" x="50" y="50" fill="#BDE318"/>
+      <rect width="50" height="50" y="50" fill="#070676"/>
+    </g>
+    <g transform="translate(200)">
+      <rect width="50" height="50" fill="#BDE318"/>
+      <rect width="50" height="50" x="50" fill="#070676"/>
+      <rect width="50" height="50" x="50" y="50" fill="#BDE318"/>
+      <rect width="50" height="50" y="50" fill="#070676"/>
+      <g transform="translate(100)">
+        <rect width="50" height="50" fill="#BDE318"/>
+        <rect width="50" height="50" x="50" fill="#070676"/>
+        <rect width="50" height="50" x="50" y="50" fill="#BDE318"/>
+        <rect width="50" height="50" y="50" fill="#070676"/>
+      </g>
+      <g transform="translate(0 100)">
+        <rect width="50" height="50" fill="#BDE318"/>
+        <rect width="50" height="50" x="50" fill="#070676"/>
+        <rect width="50" height="50" x="50" y="50" fill="#BDE318"/>
+        <rect width="50" height="50" y="50" fill="#070676"/>
+      </g>
+      <g transform="translate(100 100)">
+        <rect width="50" height="50" fill="#BDE318"/>
+        <rect width="50" height="50" x="50" fill="#070676"/>
+        <rect width="50" height="50" x="50" y="50" fill="#BDE318"/>
+        <rect width="50" height="50" y="50" fill="#070676"/>
+      </g>
+    </g>
+    <g transform="translate(0 200)">
+      <rect width="50" height="50" fill="#BDE318"/>
+      <rect width="50" height="50" x="50" fill="#070676"/>
+      <rect width="50" height="50" x="50" y="50" fill="#BDE318"/>
+      <rect width="50" height="50" y="50" fill="#070676"/>
+      <g transform="translate(100)">
+        <rect width="50" height="50" fill="#BDE318"/>
+        <rect width="50" height="50" x="50" fill="#070676"/>
+        <rect width="50" height="50" x="50" y="50" fill="#BDE318"/>
+        <rect width="50" height="50" y="50" fill="#070676"/>
+      </g>
+      <g transform="translate(0 100)">
+        <rect width="50" height="50" fill="#BDE318"/>
+        <rect width="50" height="50" x="50" fill="#070676"/>
+        <rect width="50" height="50" x="50" y="50" fill="#BDE318"/>
+        <rect width="50" height="50" y="50" fill="#070676"/>
+      </g>
+      <g transform="translate(100 100)">
+        <rect width="50" height="50" fill="#BDE318"/>
+        <rect width="50" height="50" x="50" fill="#070676"/>
+        <rect width="50" height="50" x="50" y="50" fill="#BDE318"/>
+        <rect width="50" height="50" y="50" fill="#070676"/>
+      </g>
+    </g>
+    <g transform="translate(200 200)">
+      <rect width="50" height="50" fill="#BDE318"/>
+      <rect width="50" height="50" x="50" fill="#070676"/>
+      <rect width="50" height="50" x="50" y="50" fill="#BDE318"/>
+      <rect width="50" height="50" y="50" fill="#070676"/>
+      <g transform="translate(100)">
+        <rect width="50" height="50" fill="#BDE318"/>
+        <rect width="50" height="50" x="50" fill="#070676"/>
+        <rect width="50" height="50" x="50" y="50" fill="#BDE318"/>
+        <rect width="50" height="50" y="50" fill="#070676"/>
+      </g>
+      <g transform="translate(0 100)">
+        <rect width="50" height="50" fill="#BDE318"/>
+        <rect width="50" height="50" x="50" fill="#070676"/>
+        <rect width="50" height="50" x="50" y="50" fill="#BDE318"/>
+        <rect width="50" height="50" y="50" fill="#070676"/>
+      </g>
+      <g transform="translate(100 100)">
+        <rect width="50" height="50" fill="#BDE318"/>
+        <rect width="50" height="50" x="50" fill="#070676"/>
+        <rect width="50" height="50" x="50" y="50" fill="#BDE318"/>
+        <rect width="50" height="50" y="50" fill="#070676"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,47 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
+
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "uk.crimeapp.test.AppInjectingTestRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    api project(':common-android')
+    api project(':common-test')
+    api "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    api 'org.mockito:mockito-android:2.10.0'
+    api('com.android.support.test.espresso:espresso-intents:3.0.1') {
+        exclude group: 'com.android.support'
+    }
+    api('com.android.support.test.espresso:espresso-core:3.0.1') {
+        exclude group: 'com.android.support'
+    }
+    api('com.android.support.test.espresso:espresso-contrib:3.0.1') {
+        exclude group: 'com.android.support'
+    }
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+}

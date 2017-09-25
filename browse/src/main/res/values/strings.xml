@@ -1,0 +1,12 @@
+<resources>
+    <string name="select_location">Select a Location:</string>
+    <string name="error_message">Oops, something went wrong</string>
+    <string name="retry">retry</string>
+    <string name="no_crimes_available">No crimes available</string>
+    <string name="expand">expand</string>
+    <string name="see_on_map">see on map</string>
+    <string name="crime_label">Crime:</string>
+    <string name="outcome_label">Outcome:</string>
+    <string name="date_label">Date:</string>
+    <string name="location_label">Location:</string>
+</resources>

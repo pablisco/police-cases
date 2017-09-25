@@ -1,0 +1,14 @@
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    compile 'junit:junit:4.12'
+    //noinspection GradleDependency - JRE 7
+    compile 'org.assertj:assertj-core:2.8.0'
+    compile 'org.mockito:mockito-core:2.10.0'
+}
