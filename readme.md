@@ -1,3 +1,6 @@
+
+ ![Police Cases](https://raw.githubusercontent.com/pablisco/police-cases/master/common-android/src/main/res/mipmap-xxhdpi/ic_launcher_round.png)
+
 # Police Cases UK
 
 This project contains an app that using Kotlin and the latest Android Studio (AS) tried to demo how to load data from [https://data.police.uk/docs/] and show it.
