@@ -20,7 +20,6 @@ class CrimeStateMachine(
     suspend override fun processEvent(event: CrimeEvent) = when(event) {
         is CrimeEvent.Load -> onLoad(event.locationSlug)
         is CrimeEvent.Reload -> onReload(event.locationSlug)
-        is CrimeEvent.Selected -> onSelected(event.crime)
         is CrimeEvent.LoadWithCoords -> onLoad(event.coordinates)
     }
 
@@ -41,24 +40,6 @@ class CrimeStateMachine(
                 loadCrimes = { crimesFromSlug(locationSlug) },
                 createState = { Loaded.WithSlug(it, locationSlug) }
             )
-//            if (state.requiresReload(locationSlug)) {
-//                state = CrimeState.Loading
-//            }
-//            sendState(state)
-//            if (state == CrimeState.Loading) {
-//                state = try {
-//                    val crimes = crimesFromSlug(locationSlug)
-//                    if (crimes.isEmpty()) {
-//                        Empty
-//                    } else {
-//                        Loaded.WithSlug(crimes, locationSlug)
-//                    }
-//                } catch (e: Exception) {
-//                    // TODO inject logger
-//                    CrimeState.Error
-//                }
-//                sendState(state)
-//            }
         }
     }
 
@@ -73,12 +54,11 @@ class CrimeStateMachine(
         sendState(state)
         if (state == CrimeState.Loading) {
             state = try {
-                val crimes = loadCrimes()// crimesFromSlug(locationSlug)
+                val crimes = loadCrimes()
                 if (crimes.isEmpty()) {
                     Empty
                 } else {
                     createState(crimes)
-//                    Loaded.WithSlug(crimes, locationSlug)
                 }
             } catch (e: Exception) {
                 Log.d("Oops", "oops", e)
@@ -89,16 +69,9 @@ class CrimeStateMachine(
         }
     }
 
-    private fun CrimeState.requiresReload(slug: String): Boolean =
-        this !is CrimeState.Loaded.WithSlug || searchSlug != slug
-
     private suspend fun onReload(locationSlug: String) {
         state = CrimeState.Loading
         onLoad(locationSlug)
-    }
-
-    private suspend fun onSelected(crime: Crime) {
-
     }
 
 }

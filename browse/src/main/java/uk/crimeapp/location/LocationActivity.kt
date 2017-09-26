@@ -21,9 +21,11 @@ import uk.crimeapp.common.di.graph
 import uk.crimeapp.crime.CrimeActivity
 import uk.crimeapp.crime.locationName
 import uk.crimeapp.location.model.Location
+import uk.crimeapp.location.model.Location.Companion.NO_LOCATION
 import uk.crimeapp.location.model.LocationEvent
 import uk.crimeapp.location.model.LocationState
 import uk.crimeapp.main.R
+import kotlin.properties.Delegates.observable
 
 class LocationActivity : AppCompatActivity() {
 
@@ -103,7 +105,7 @@ class LocationActivity : AppCompatActivity() {
             items.size
 
         override fun onBindViewHolder(holder: LocationViewHolder, position: Int) {
-            holder.bind(items[position])
+            holder.data = items[position]
         }
     }
 
@@ -115,7 +117,9 @@ class LocationActivity : AppCompatActivity() {
         private val locationNameView = itemView.locationNameView
         private val locationIcon = itemView.locationIcon
 
-        fun bind(location: Location) {
+        var data: Location by observable(NO_LOCATION) { _, _, l -> bind(l) }
+
+        private fun bind(location: Location) {
             locationIcon.visibleWhen(invisibleAs = INVISIBLE) {
                 location == Location.NEAR_LOCATION
             }
