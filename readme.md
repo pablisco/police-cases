@@ -3,7 +3,7 @@
 
 # Police Cases UK
 
-This project contains an app that using Kotlin and the latest Android Studio (AS) tried to demo how to load data from [https://data.police.uk/docs/] and show it.
+This project contains an app that, using Kotlin and the latest Android Studio (AS), demos how to load data from [https://data.police.uk/docs/] and show it to the user.
 
 ## Notes:
 
@@ -25,7 +25,7 @@ In this instance, instead of using the customary Dagger 2, I've used manual inje
  
  What's missing:
  
- - More caching. The app does no caching other than in memory; this can be improved in several ways. Ideally, the server should provide eTags or expiration dates, and on OkHttp we can set a 
+ - More caching. The app does no caching other than in memory; this can be improved in several ways. Ideally, the server should provide eTags or expiration dates, and on OkHttp we can set an Interceptor.
  - For this time, I have merged the view components (Activities) with the state machines. However, they should be moved to a plain Kotlin module along with the model objects. However, there are a couple of issues running unit tests with tests in AS 3.0 and standard Kotlin modules.
  - More testing. I've done a couple of showcases. However, due to time limits, it's not fully tested yet.
  - Separate details screen. To keep it simple, I've made the list that shows crimes use expandable rows. However, this was a shortcut. Ideally, it should show a separate screen, maybe on a live map.
